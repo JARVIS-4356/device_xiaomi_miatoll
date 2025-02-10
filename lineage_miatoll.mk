@@ -9,7 +9,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 
-# Inherit some common VoltageOS stuff.
+# Inherit some common Lineage stuff.
 $(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 
 # Inherit from miatoll device
@@ -20,10 +20,7 @@ TARGET_BOOT_ANIMATION_RES := 1920
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
-# Voltage OS
-VOLTAGE_BUILD_TYPE := OFFICIAL
-
-PRODUCT_NAME := voltage_miatoll
+PRODUCT_NAME := lineage_miatoll
 PRODUCT_DEVICE := miatoll
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
